@@ -6,9 +6,10 @@ HOST: http://polls.apiblueprint.org/
 <ul>
     <li>File Adapter in Oracle Integration Cloud Service is used to <b>read and write</b> files on local and remote systems.</li>
     <li>File can be processed from the server where connectivity agent is installed.</li>
+    <li>The File Adapter is a predefined adapter included with Oracle Integration Cloud Service</li>
 </ul>
 
-### Difference Between File and FTP Adapters
+### File Adapter vs FTP Adapter
 
 <table>
     <tr>
@@ -41,6 +42,14 @@ HOST: http://polls.apiblueprint.org/
     <tr>
     <tr>
         <td>7) Supports a maximum file size of 6 MB</td>
-        <td>7) Supports transfer for transferring large files</td>
+        <td>7) Streaming support for transferring large files</td>
+    </tr>
+    <tr>
+        <td>8) Does <b>not</b> allow to create <b>encrypted files</b></td>
+        <td>8) Allows developer to create encrypted files using <b>Pretty Good Privacy(PGP)</b> encryption</td>
+    </tr>
+    <tr>
+        <td>9) Does <b>not</b> allow to <b>decrypt files</b></td>
+        <td>9) Allows developer to decrypt a file which is being read or downloaded from a remote FTP/sFTP sever using <b>Pretty Good Privacy(PGP)</b> cryptography</td>
     </tr>
 </table>

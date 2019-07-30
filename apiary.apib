@@ -1,5 +1,5 @@
 FORMAT: 1A
-HOST: http://polls.apiblueprint.org/
+HOST: https://invacaretest-a493523.integration.us2.oraclecloud.com/integration/flowapi/rest/USE_CASE_5/v01
 
 # Use Case 5 (File Adapter)
 
@@ -53,3 +53,33 @@ HOST: http://polls.apiblueprint.org/
         <td>9) Allows developer to decrypt a file which is being read or downloaded from a remote FTP/sFTP sever using <b>Pretty Good Privacy(PGP)</b> cryptography</td>
     </tr>
 </table>
+
+
+Com
+## OCC Organization Data to File using File Adapter
+
+Transferring OCC Organization Data is an API which fetches organization data from the Oracle Commerce Cloud (OCC) and loads the data into a file(.csv). The operation will be performed only if data transfer is permitted. ie. Transfer = "Yes".
+
+Parameter: <b>Transfer = "Yes"</b> (To initiate transfer)
+
+## Organization Data [/transfer_point]
+
+### Data Transfer [POST]
+
++ Request (application/json)
+
+        {
+            "Transfer" : "Yes"
+        }
+
++ Response 201 (application/json)
+
+     + Headers
+     
+            Authorization: Basic
+    
+    + Body
+    
+            {
+                "StatusMsg": "\"Success\""
+            }

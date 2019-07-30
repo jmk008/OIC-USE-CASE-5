@@ -1,0 +1,42 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# Use Case 5 (File Adapter)
+
+<ul>
+    <li>File Adapter in Oracle Integration Cloud Service is used to <b>read and write</b> files on local and remote systems.</li>
+    <li>File can be processed from the server where connectivity agent is installed.</li>
+</ul>
+
+### Difference Between File and FTP Adapters
+
+<table>
+    <tr>
+        <th align="center">File Adapter</th>
+        <th align="center">FTP Adapter</th>
+    </tr>
+    <tr>
+        <td>1) File can be processed from the server where <b>connectivity agent is installed</b> in binary and ASCII format</td>
+        <td>1) File can be processed from any FTP server which is <b>publicly accessible</b> in binary and ASCII format</td>
+    </tr>
+    <tr>
+        <td>2) The adapter <b>can</b> be used to connect to servers having network restrictions</td>
+        <td>2) The adapter <b>cannot</b> be used to connect to FTP and sFTP servers behind company firewalls</td>
+    </tr>
+    <tr>
+        <td>3) File adapter supports <b>trigger and invoke connections<b></td>
+        <td>3) FTP adapter supports only <b>invoke connection</b></td>
+    <tr>
+    <tr>
+        <td>4) Supported operations: <b>Read File, Write File</b></td>
+        <td>4) Supported operations: <b>Read File, Write File, List File, Delete File, Move File, Download File</b></td>
+    </tr>
+    <tr>
+        <td>5) Supports synchronous one-way request message exchange pattern. There is no response from the server</td>
+        <td>5) Supports synchronous one-way request message exchange pattern. There is no response from the server</td>
+    </tr>
+    <tr>
+        <td>6) Allows creation of <b>binary files(opaque)</b> and schema-based files such as <b>XML schema and comma-separated values</b></td>
+        <td>6) Allows creation of a <b>schema file format</b> to use for file transfer. The schema can be created from either a <b>comma-separated value (CSV) or from an existing schema file</b></td>
+    <tr>
+</table>
